@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../StyleSheet.css">
+	<nav>
+		<a	href="../index.html">Home</a>
+	</nav>
+	
+	
+</head>
+<body>
+<canvas id="myCanvas" width="2000" height="1500"
+style="border:1px solid #d3d3d3;">
+</canvas>
+
+<script>
+var colors = ['red', 'green', 'blue', 'orange', 'yellow', 'cyan', 'pink'];
+var radius = [10,15,20,25,30,35,40,45,50,55,60,65,70]
+var canvas = document.getElementById("myCanvas");
+canvas.addEventListener('click',
+   function(evt){
+   var ctx = canvas.getContext("2d");
+var random = Math.random() * ( 5- 1);
+ctx.beginPath();
+           var rad = radius[Math.floor(Math.random() * radius.length)]
+ctx.arc(evt.clientX,evt.clientY,rad,0,2*Math.PI);
+           ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)]
+           ctx.fill();
+ctx.stroke();
+   },false);
+   
+   
+
+</script>
+</body>
+</html>
+
+
+<!--
+canvas.addEventListener('click',
+
+
+   function(evt){
+   var ctx = canvas.getContext("2d");
+var random = Math.random() * ( 5- 1);
+ctx.beginPath();
+           var rad = radius[Math.floor(Math.random() * radius.length)]
+ctx.arc(evt.clientX,evt.clientY,rad,0,2*Math.PI);
+           ctx.fillStyle = colors[Math.floor(Math.random() * colors.length)]
+           ctx.fill();
+ctx.stroke();
+   },false);
+   -->

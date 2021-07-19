@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../StyleSheet.css">
+
+
+</head>
+
+<body>
+<nav>
+	<a	href="../index.html">Home</a>
+	<script src="../scripts.js"></script>
+	
+<h6>Feedback From</h6>
+
+<div class="container">
+	<form id="myform" onsubmit="return validate();">
+		<div class="row">
+		 <div class="col-25">
+		  <label for="fname">First Name</label>
+		  </div>
+		  <div class="col-75">
+		   <input type="text" id="fname" name="firstname" placeholder="Your Name">
+		  </div>
+		  </div>
+		  
+		  <div class="row">
+		  <div class="col-25">
+		   <label for="lname">Last Name</label>
+		  </div>
+		  <div class="col-75">
+			<input type="text" id="lname" name="lastname" placeholder="Your Lastname">
+		  </div>
+		  </div>
+		  
+		  <div class="row">
+		   <div class="col-25">
+		    <label for="email">Email</label>
+		   </div>
+		   <div class="col-75">
+		    <input type="email" id="email" name="email" placeholder="name@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+			</div>
+			</div>
+			
+			<div class="row">
+			 <div class="col-25">
+			  <label for="phone">Phone Number</label> 
+			  </div>
+			  <div class="col-75">
+			   <input type="phone" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+			  </div>
+			  </div>
+			  
+			  <div class="row">
+			   <div class="col-25">
+			    <label for="feed_back">Feedback</label>
+				</div>
+				<div class="col-75">
+				 <textarea id="subject" name="subject" placeholder="Enter your feedback"></textarea>
+				 </div>
+				 </div>
+				 
+			<div class="btn">
+				<input type="submit">
+			</div>	
+			
+				 
+				   
+				  
+		</form>
+		</div>
+				  
+				 
+					 
+				  
+				  
+				  
+			
+</body>
+</html>
+

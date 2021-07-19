@@ -1,0 +1,135 @@
+.sidebar {
+height: 900px;
+width: 150px;
+position: sticky;
+top: 0px;
+float: right;
+background-color: lightblue;
+}
+
+.sidebar div {
+padding: 8px;
+font-size: 24px;
+display: block;
+}
+ 
+body{
+	 background-image: url("img/Bliss.png");
+	 background-repeat: no-repeat;
+	 background-attachment:fixed;
+	 background-size: 100% 100%;
+	 }
+	 
+	 footer{
+		 position: absolute;
+		 bottom: 0;
+		 width: 100%;
+		 height: 2.5rem;
+		 color: white;
+	 }
+	 
+	 .right{
+		 float: right;
+		 margin-left: 20px
+	 }
+	 
+	 h1{text-align: Center;
+		color: Yellow;}
+		
+	h2{ color: Yellow;
+		text-align: Center;}
+		
+	h3{ color: White;
+		
+	}
+		
+	 aside > h4 {margin: 0;
+	 color: Black;
+	 }
+	 
+	 h6{
+		font-size:x-large;
+	    }
+	
+	 
+	 aside {
+	 float: right;
+	 
+	 border: thin solid black;
+	 
+	 
+	 }
+	 table{ background-color: White;}
+	 table, th, td {
+		 border: thin solid;
+		 
+		}
+		.table{
+			display: table;
+			border-spaceing: 20px;
+			}
+		.caption{
+			display: table-caption;
+			font-size: xx-large;
+			text-align: center;
+			}
+		.row {display: table-row;}
+		.row > * {
+		display: table-cell;
+		text-align:center;
+		}
+	
+	
+	*{ box-sizing: border-box;}
+	
+	input[type=text], select, textarea{
+		width: 100%;
+		padding: 12px;
+		border: 1px solid;
+		border-radius: 4px;
+		resize: vertical;
+	}
+	
+	label{
+		padding: 12px 12px 12px 0;
+		display: inline-block;
+	}
+	
+	input[type=submit]{
+		background-color: rgb(37, 116, 161);
+		color: white;
+		padding: 12px 20px;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		float: right;
+	}
+	
+	input[type=submit]:hover{
+		background-color: #45a049;
+		padding: 20px;
+	}
+	
+	.container{
+		border-radius: 5px;
+		background-color: #f2f2f2;
+		padding: 20px;
+	}
+	
+	.col-25{
+		float: left;
+		width:25%;
+		margin-top: 6px;
+	}
+	
+	.col-75{
+		float: left;
+		width:75%;
+		margin-top:6px;
+	}
+	
+	.row:after {
+		content:"";
+		display: table;
+		clear:both;
+	}
